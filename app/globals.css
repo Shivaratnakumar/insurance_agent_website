@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { color-scheme: light; }
+html { scroll-behavior: smooth; }
+body { background: #f7f9fc; color: #12213b; }
+::selection { background: #f7d98a; color: #071936; }
+.container-shell { width: min(1160px, calc(100% - 40px)); margin-inline: auto; }
+.section-pad { padding-block: 88px; }
+@media (max-width: 640px) {
+  .container-shell { width: min(100% - 28px, 1160px); }
+  .section-pad { padding-block: 62px; }
+}
